@@ -5,7 +5,7 @@ from flask_cors import CORS  # Import CORS
 app = Flask(__name__)
 CORS(app)
 # Set up OpenAI API
-openai.api_key = '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'
+openai.api_key = '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'
 model_id = 'gpt-3.5-turbo'
 def generate_email_content(messages):
     response = openai.ChatCompletion.create(
