@@ -27,7 +27,7 @@ function EmailAssistant() {
     };
 
     try {
-      const response = await axios.post('https://email-backend-xi.vercel.app/generate_emails', requestData);
+      const response = await axios.post('https://flask-production-399d.up.railway.app/generate_emails', requestData);
       setEmailTemplates(response.data.email_templates);
     } catch (error) {
       console.error('Error fetching data:', error);
